@@ -10,7 +10,6 @@ pipeline {
         stage('task2_sit') {         
             steps {
                 //bat  "set path=%path%C:\\Program Files (x86)\\Java\\jdk1.8.0_151\\bin;"
-				bat 'rmdir C:\\tempDirectorySIT'
 				bat 'mkdir C:\\tempDirectorySIT'
             
             }
