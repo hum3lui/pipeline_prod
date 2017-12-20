@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('gate') {
+            steps {
+                input 'ready to go?'
+            }
+        }        
         stage('task1_prod') {
             steps {
                 echo "PROD banner"
