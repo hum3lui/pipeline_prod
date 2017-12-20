@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('task1_sit') {
+        stage('task1_prod') {
             steps {
-                echo "SIT banner"
+                echo "PROD banner"
             }
         }
-        stage('task2_sit') {         
+        stage('task2_prod') {         
             steps {
                 //bat  "set path=%path%C:\\Program Files (x86)\\Java\\jdk1.8.0_151\\bin;"
 				bat 'mkdir C:\\tempDirectoryPROD'
             
             }
         }
-        stage('task3_sit') {
+        stage('task3_prod') {
             environment {
                 PATH = "%path%;C:\\Windows\\SysWOW64;C:\\Program Files (x86)\\Java\\jdk1.8.0_151\\bin"
             }
