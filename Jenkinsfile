@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('gate') {
             steps {
-                input 'ready to go?'
+                input message:'ready to go?',submitter:'prod_admin,admin'
             }
         }        
         stage('task1_prod') {
